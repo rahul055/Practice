@@ -6,6 +6,7 @@ import { Injectable, EventEmitter } from '@angular/core';
   providedIn: 'root'
 })
 export class ProgService {
+  private count: number = 0
 
   private Em: EventEmitter<GtNo> = new EventEmitter()
   constructor() { }
@@ -17,4 +18,10 @@ export class ProgService {
   subscribeno(myFn: (ev: GtNo) => void) {
     this.Em.subscribe(ev => myFn(ev))
   }
+  progb() {
+    this.count += 25
+    console.log(this.count);
+  }
+
+
 }

@@ -5,12 +5,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { OpsCardComponent } from './ops-card/ops-card.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { FormComponent } from './form/form.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     OpsCardComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    FormComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule
